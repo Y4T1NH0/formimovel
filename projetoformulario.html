@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu imóvel</title>
+    <link rel="stylesheet" href="css/estilizar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Venda seu imóvel com facilidade!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-body">
+               <h1 class="form-title">Anuncie seu imóvel</h1> 
+               <p>Descreva as características e marque os opcionais que ele possui.</p>
+               <form>
+                <div class="box-input">
+                    <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                    <input type="text" name="title" id="title" class="block
+                    "minlength="1" maxlength="30" placeholder="Um título para seu imóvel"
+                    required >
+                </div>
+                <div class="box-input">
+                  <label for="price">Preço <span class="required-field">*</span></label>
+                    <input type="number" name="price" id="price" class="block" 
+                    minlength="1"
+                    maxlength="30"
+                    placeholder="Preço do seu imóvel"
+                    required/>
+                    
+                </div>
+                <div class="box-input">
+                  <label for="description">Descrição <span class="required-field">*</span></label>
+                    <textarea type="text" name="description" id="description" class="block" 
+                    minlength="1"
+                    maxlength="3000"
+                    placeholder="Descreva detalhes do imovél, exemplo: se ele tem alguma parte danifica."
+                    required></textarea>
+                    
+                </div>
+                <div class="box-input">
+                    <label for="floor"
+                      >Piso <span class="required-field">*</span></label
+                    >
+                    <input
+                      type="text"
+                      name="piso"
+                      id="piso"
+                      class="block"
+                      placeholder="Digite o tipo de piso"
+                      required
+                    />
+                  </div>
+                  <div class="box-input">
+                    <label for="numberoom"
+                      >Número de quartos <span class="required-field">*</span></label
+                    >
+                    <input
+                      type="number"
+                      name="numberoom"
+                      id="numberoom"
+                      class="block"
+                      placeholder="Digite o número de quartos"
+                      required
+                    />
+                  </div>
+                  <div class="box-input">
+                    <label for="purchase_date"
+                      >Data de compra <span class="required-field">*</span></label
+                    >
+                    <input
+                      type="date"
+                      name="purchase_date"
+                      id="purchase_date"
+                      class="block"
+                      required
+                    />
+                    </div>
+                    <div class="box-input">
+                      <p>Possui móveis e eletrodomésticos?<span class="required-field">*</span></p>
+                      <input type="radio" id="yes" name="choose" />
+                      <label for="yes">Sim</label>
+                      <input type="radio" id="no" name="choose" />
+                      <label for="no">Não</label>
+                    </div>
+                    <div class="optional-box">
+                      <p>Se sim, marque os opcionais abaixo:</p>
+                      <ul class="optional-list">
+                        <li>
+                          <input type="checkbox"
+                          id="fridge"
+                          name="optional[]"
+                          value="fridge"
+                          >
+                          <label for="fridge">Geladeira</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="sofa"
+                          name="optional[]"
+                          value="sofa"
+                          >
+                          <label for="sofa">Sofá</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="wardrobe"
+                          name="optional[]"
+                          value="wardrobe"
+                          >
+                          <label for="wardrobe">Armário</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="ac"
+                          name="optional[]"
+                          value="ac"
+                          >
+                          <label for="ac">Ar condicionado</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="bed"
+                          name="optional[]"
+                          value="bed"
+                          >
+                          <label for="bed">Cama</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="dinnertable"
+                          name="optional[]"
+                          value="dinnertable"
+                          >
+                          <label for="dinnertable">Mesa de jantar</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="optional-box">
+                      <ul class="optional-list">
+                        <li>
+                          <input type="checkbox"
+                          id="stove"
+                          name="optional[]"
+                          value="stove"
+                          >
+                          <label for="stove">Fogão</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="fan"
+                          name="optional[]"
+                          value="fan"
+                          >
+                          <label for="fan">Ventilador</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="kitchencabinet"
+                          name="optional[]"
+                          value="kitchencabinet"
+                          >
+                          <label for="kitchencabinet">Armário na cozinha</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="shelve"
+                          name="optional[]"
+                          value="shelve"
+                          >
+                          <label for="shelve">Pratelheiras</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="chair"
+                          name="optional[]"
+                          value="chair"
+                          >
+                          <label for="chair">Cadeiras</label>
+                        </li>
+                        <li>
+                          <input type="checkbox"
+                          id="rack"
+                          name="optional[]"
+                          value="rack"
+                          >
+                          <label for="rack">Rack</label>
+                        </li>
+
+                      </ul>
+                    </div>
+                    <div class="box-input">
+                      <label for="description">Outros:</label>
+                      <textarea type="text" name="description" id="description" class="block" 
+                      minlength="1"
+                      maxlength="1000"
+                      placeholder="Se houver mais, escreva-os aqui."
+                      required></textarea>
+                      
+                  </div>
+                    <div class="box-input">
+                      <p>Fotos da casa: <span class="required-field">*</span></p>
+                      <input type="file"
+                      multiple
+                      accept="image/png, image/jpg"
+                      id="images"
+                      name="images"
+                      required>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn-submit">
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html
